@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3368A0;
+    display: flex;
+    justify-content: center;
+    padding: 30px 16px;
+}
+
+form{
+    background-color: #66A3BF;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px;
+}
+
+.field{
+    margin-bottom: 16px;
+}
+
+input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #3368A0;
+}
+
+input:focus{
+    outline: none;
+    border-color: #062444;
+    box-shadow: 0 0 0 3px;
+}
+
+h1{
+    margin-top: 0;
+    color: #112841;
+    text-align: center;
+    font-size: 25px;
+}
+
+div{
+    font-weight: bold;
+    color: #112841;
+    margin: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 6px; /* Membuat sudut sedikit melengkung */
+    border: none;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-daftar {
+    background-color: #061524;
+    color: white;
+}
+
+.btn-daftar:hover {
+    background-color: #1c4e83;
+}
+
+.btn-reset {
+    background-color: #d9534f;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: #c9302c;
+}
+
+input::placeholder{
+    color: #7DCCAD;
+}

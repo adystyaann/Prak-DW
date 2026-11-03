@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f0e3, #f8f5ec);
+    color: #344638;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(52, 70, 56, 0.12);
+    border: 1px solid #dce6d7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    color: #355e3b;
+    margin: 0 0 12px;
+}
+
+.deskripsi {
+    text-align: center;
+    font-size: 14px;
+    color: #778174;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #405743;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5dfd0;
+    border-radius: 8px;
+    background-color: #fbfcf9;
+    font-size: 14px;
+    color: #344638;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #658b62;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(101, 139, 98, 0.15);
+}
+
+input::placeholder {
+    color: #a2aa9e;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-daftar {
+    background-color: #496b45;
+    color: white;
+}
+
+.btn-daftar:hover {
+    background-color: #355e3b;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background-color: #e8ede3;
+    color: #496b45;
+}
+
+.btn-reset:hover {
+    background-color: #d6e1ce;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .form-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}

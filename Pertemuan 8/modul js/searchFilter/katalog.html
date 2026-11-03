@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Katalog Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Katalog Produk</h1>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Cari nama produk..."
+        >
+
+        <select id="filter">
+            <option value="semua">Semua Kategori</option>
+            <option value="elektronik">Elektronik</option>
+            <option value="pakaian">Pakaian</option>
+            <option value="makanan">Makanan</option>
+        </select>
+
+        <section class="produk-container">
+
+            <article class="produk" data-kategori="elektronik">
+                <h3>Laptop</h3>
+                <p>Elektronik</p>
+                <p>Rp5.000.000</p>
+            </article>
+
+            <article class="produk" data-kategori="pakaian">
+                <h3>Kaos</h3>
+                <p>Pakaian</p>
+                <p>Rp75.000</p>
+            </article>
+
+            <article class="produk" data-kategori="makanan">
+                <h3>Roti</h3>
+                <p>Makanan</p>
+                <p>Rp15.000</p>
+            </article>
+
+            <article class="produk" data-kategori="elektronik">
+                <h3>Headphone</h3>
+                <p>Elektronik</p>
+                <p>Rp250.000</p>
+            </article>
+
+        </section>
+
+        <p id="tidakDitemukan" style="display: none;">
+            Produk tidak ditemukan.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

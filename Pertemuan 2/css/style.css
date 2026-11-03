@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(247, 204, 247);
+}
+
+table{
+    background-color: black;
+    border: solid 1px black;
+}
+
+h1{
+    color: blue;
+    background-color: blue;
+}
+
+th{
+    color: palevioletred;
+    background-color: papayawhip;
+}
+
+td{
+    color: rgb(129, 53, 66);
+    background-color: rgb(174, 138, 207);
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9f5e8;
+  font-family: Arial, sans-serif;
+  color: #536a6b;
+}
+
+.login-card {
+  width: 50%;
+  max-width: 760px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #dce9df;
+  border-radius: 20px;
+}
+
+h1 {
+  color: #078b88;
+  font-size: 38px;
+  margin: 0 0 20px;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #d4e2dc;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 16px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+
+button {
+  padding: 18px 30px;
+  border: none;
+  border-radius: 14px;
+  background: #078b88;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.guest-text {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.guest-text a {
+  color: #087d7a;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .login-card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+}

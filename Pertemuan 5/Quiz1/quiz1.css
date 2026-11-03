@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mint: #e5f4e3;
+  --green: #087f68;
+  --green-dark: #063f35;
+  --text: #183f36;
+  --muted: #526f65;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--mint);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  min-height: 78px;
+  padding: 0 6.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid rgba(8,127,104,.12);
+}
+
+.logo {
+  color: var(--green-dark);
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.logo span { color: var(--green); }
+
+nav { display: flex; gap: 32px; }
+nav a {
+  color: var(--text);
+  font-size: 15px;
+  text-decoration: none;
+}
+nav a:hover, .card-content a:hover { color: var(--green); }
+
+.logout {
+  padding: 12px 25px;
+  border: 1.5px solid var(--green);
+  border-radius: 9px;
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background: #063f35;
+  color: white;
+  border-color: #063f35;
+}
+
+.hero {
+  max-width: 1250px;
+  margin: auto;
+  padding: 64px 28px 76px;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.eyebrow {
+  margin-bottom: 20px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin-bottom: 22px;
+  color: #092f27;
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1.22;
+}
+
+.hero-description {
+  max-width: 460px;
+  margin-bottom: 26px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.primary-button {
+  display: inline-block;
+  padding: 15px 24px;
+  border-radius: 9px;
+  background: var(--green-dark);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.primary-button:hover { background: var(--green); }
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.recommendations {
+  padding: 42px 6.5% 76px;
+  background: rgba(255,255,255,.12);
+  text-align: center;
+}
+.centered { margin-bottom: 18px; }
+
+.recommendations h2, .about h2 {
+  margin-bottom: 14px;
+  color: #123e33;
+  font-size: 29px;
+}
+.section-description {
+  margin-bottom: 36px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.card-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+.destination-card {
+  overflow: hidden;
+  border: 1px solid rgba(8,127,104,.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,.13);
+  box-shadow: 0 5px 18px rgba(26,76,55,.04);
+}
+.destination-card img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content { padding: 20px 18px 22px; }
+.card-content h3 {
+  margin-bottom: 13px;
+  color: var(--green);
+  font-size: 18px;
+}
+
+.card-content p {
+  min-height: 48px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.card-content a {
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.about {
+  padding: 70px 24px 80px;
+  text-align: center;
+  background: #b9e8b5;
+}
+
+.about h2 {
+  color: #123e33;
+}
+
+.about p:last-child {
+  max-width: 620px;
+  margin: auto;
+  color: #315c4b;
+  line-height: 1.7;
+}
+
+.footer {
+  padding: 40px 24px;
+  background: #063f35;
+  color: #d1e8df;
+  text-align: center;
+}
+
+.footer p {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .navbar { padding: 18px 5%; flex-wrap: wrap; gap: 16px; }
+  nav { order: 3; width: 100%; justify-content: center; gap: 24px; }
+  .logout { padding: 9px 16px; }
+  .hero { padding: 42px 6% 52px; grid-template-columns: 1fr; gap: 30px; }
+  .hero h1 { font-size: 36px; }
+  .hero-image { height: 250px; }
+  .recommendations { padding: 42px 6% 56px; }
+  .card-grid { grid-template-columns: 1fr; gap: 20px; }
+  .destination-card img { height: 210px; }
+  .card-content p { min-height: auto; }
+}

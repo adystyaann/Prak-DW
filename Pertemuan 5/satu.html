@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="satu1.css">
+</head>
+<body>
+    <form id="FromPendaftaran">
+        <h1>Form Pendaftaran Mahasiswa</h1>
+        <div class="field">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh : Adystya Anandita" required>
+        </div>
+
+        <div class="field">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim" maxlength="10" pattern="[0-9]{10}" placeholder="10 digit angka" required>
+        </div>
+
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="nama@gmail.com" required>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+
+        <button type="submit" class="btn-daftar">Daftar</button>
+        <button type="reset" class="btn-reset">Reset</button>
+
+        <script>
+            const form = document.getElementById("FormPendaftaran");
+
+            form .addEventListener("submit", function(event){
+                event.preventDefault();
+
+                alert("Pendaftaran Berhasil");
+
+                form.reset();
+            });
+        </script>
+    </form>
+</body>
+</html>
